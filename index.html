@@ -3,20 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Welcome to Our Website!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 
-    <h1>Welcome to the Website!</h1>
-    <p>This is your main content.</p>
-    <div id="cookie-banner" class="show">
-        <p>
-            We use cookies to ensure you get the best experience on our website. 
-            By continuing to browse, you agree to our 
-            <a href="/cookie-policy.html">Cookie Policy</a>.
-        </p>
-        <button id="accept-cookies-btn">Accept</button>
+    <header class="main-header">
+        <div class="container">
+            <h1>My Awesome Site</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <section class="hero">
+            <h2>Experience the Web, Your Way.</h2>
+            <p>We believe in transparency. Our website uses cookies to enhance your browsing experience, personalize content, and analyze our traffic. By clicking "Accept All" or continuing to use our site, you consent to our use of cookies.</p>
+            <button class="primary-btn">Learn More</button>
+        </section>
+
+        <section class="info-cards">
+            <div class="card">
+                <h3>Privacy First</h3>
+                <p>Your data security is our top priority. We use cookies responsibly.</p>
+            </div>
+            <div class="card">
+                <h3>Better Experience</h3>
+                <p>Cookies help us tailor content and features just for you.</p>
+            </div>
+            <div class="card">
+                <h3>Site Analytics</h3>
+                <p>Understand how our site is performing to improve it constantly.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 My Awesome Site. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner hide">
+        <div class="container cookie-content">
+            <p>
+                This website uses cookies to improve your experience. By using our site, you agree to our 
+                <a href="/cookie-policy.html" class="cookie-link">Cookie Policy</a>.
+            </p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies-btn" class="cookie-btn accept-btn">Accept All</button>
+                <button id="decline-cookies-btn" class="cookie-btn decline-btn">Decline</button>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
